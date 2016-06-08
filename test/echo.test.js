@@ -1,9 +1,12 @@
-var echo = require('../src/echo.js');
 var expect = require('expect.js');
+eval(require('fs').readFileSync('src/echo.js', 'utf8'));
 
 describe('echo client', function() {
   describe('#init', function() {
-    xit('requires a user id')
+    it('requires a user id', function() {
+      echo.init('123', '222')
+    })
+
     xit('aims at notification app')
   });
 
