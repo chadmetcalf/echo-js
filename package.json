@@ -7,6 +7,9 @@
     "chai": "^3.5.0",
     "eslint": "^2.8.0",
     "expect.js": "^0.3.1",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.3",
     "jade": "^1.11.0",
     "mocha": "^2.4.5"
   },
@@ -15,5 +18,8 @@
     "tdd": "mocha test/**/*.test.js -w"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
 }
