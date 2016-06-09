@@ -5,9 +5,10 @@
       baseUrl: 'http://localhost:4000/api/v1'
     },
 
-    init: function(appId, userId) {
+    init: function(appId, userId, options) {
       this.appId = appId;
       this.userId = userId;
+      $.extend(this.options, options);
     },
 
     notifications: function(callback) {
