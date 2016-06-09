@@ -21,7 +21,7 @@ var echo = {
     $.ajax({
       url: this.options.baseUrl + '/notifications/' + notificationId,
       type: 'DELETE',
-      data: { user_id: this.options.userId }
+      data: { user_id: this.options.userId },
       success: function(data) {
         callback(data);
       }
