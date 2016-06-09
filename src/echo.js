@@ -20,7 +20,7 @@ var echo = {
   acknowledgeNotification: function(notificationId, callback) {
     $.ajax({
       url: this.options.baseUrl + '/notifications/' + notificationId,
-      type: 'DELETE',
+      type: 'PUT',
       data: { user_id: this.options.userId },
       success: function(data) {
         callback(data);
