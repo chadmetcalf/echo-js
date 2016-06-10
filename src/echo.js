@@ -6,13 +6,13 @@ var echo = {
   },
 
   init: function(appId, userId, options) {
-    this.appId = appId;
-    this.userId = userId;
     $.extend(this.options, options);
+    this.options.appId = appId;
+    this.options.userId = userId;
   },
 
   notifications: function(callback) {
-    $.get(this.options.baseUrl + '/notifications?user_id=' + this.userId, function(data) {
+    $.get(this.options.baseUrl + '/notifications?user_id=' + this.options.userId, function(data) {
       callback(data);
     });
   },
